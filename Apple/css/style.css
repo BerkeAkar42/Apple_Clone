@@ -1,0 +1,1622 @@
+/* ---------------------------------------------- /*
+ * html
+/* ---------------------------------------------- */
+
+body{
+    /* Yana kaydırma çubuğunu kapattık */
+    overflow-x: hidden;
+    /* background-color: rgb(223, 223, 223); */
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn {
+  width: 170px;
+  height: 45px;
+  border-radius: 35px;
+}
+
+.btn-primary-2 {
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+.btn-primary-2:hover {
+  background-color: #0d6efd;;
+  color: #fff;
+}
+
+.btn-dark-2 a{
+  all: unset;
+  cursor: pointer;
+}
+
+.btn-dark-2 {
+  background-color: transparent;
+  color: #131313;
+}
+
+.btn-dark-2:hover {
+  background-color: #131313;;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * "İndirim" Butonu
+/* ---------------------------------------------- */
+
+/* İndirim yazısını büyütüyor. */
+.badge {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* İndirim yazısının konumunu ayarlıyor */
+.badge.bg-danger {
+    top: 10px; /* Üstten 10px mesafe */
+    left: 10px; /* Soldan 10px mesafe */
+}
+
+/* ---------------------------------------------- /*
+ * Kartlar / img Hover
+/* ---------------------------------------------- */
+
+  .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .ykn{
+    transition: transform 0.3s ease;
+  }
+  .ykn:hover{
+    transform: scale(1.005);
+  }
+
+
+/* .card p{
+    font-size: 14px;
+} */
+
+/* ---------------------------------------------- */
+
+/* Cardlar kaydırma butonları */
+
+.scrolling-wrapper {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      scroll-behavior: smooth;
+      padding-bottom: 1rem;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      width: 18rem;
+      border-radius: 20px;
+    }
+
+    /* Cartdlara link koyunca a etiketinin stillerini kaldırıcak */
+    .card a{
+      all: unset;
+      cursor: pointer; 
+    }
+    /*  */
+    .card img {
+      border-radius: 20px;
+    }
+
+    .slider-container {
+      position: relative;
+    }
+
+    .scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #333;
+      z-index: 1;
+      cursor: pointer;
+      padding: 0 10px;
+      user-select: none;
+    }
+
+    .scroll-button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .scroll-button:hover {
+      color: #000;
+    }
+
+    .scroll-left {
+      left: -10px;
+    }
+
+    .scroll-right {
+      right: -10px;
+    }
+
+
+/* ---------------------------------------------- /*
+ * Header
+/* ---------------------------------------------- */
+
+#header .header-row {
+  height: 44px;
+}
+
+#header {
+    height: 44px;
+    background-color: #fff;
+}
+
+.navbar a{
+  color: #363636;
+  font-size: 13px;
+}
+
+.navbar a:hover{
+  color: #000000;
+}
+
+/* Apple logo */
+#header .bi-apple {
+  font-size: 15px;
+}
+
+.navbar {
+  padding: 2px 0 0 0;
+}
+
+/* Yazıların aşağıya kaymasını engelledik */
+.navbar-nav {
+  white-space: nowrap;
+}
+
+
+.navbar ul {
+  /* Araları mesafeli yaptık */
+  gap: 27px;
+}
+
+
+/* --------------------------- */
+/* Hover ile dropdown açma */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Dropdown menünün kaymaması için */
+  animation: fadeInDown 0.3s ease-in-out;
+}
+
+/* Opsiyonel: Yumuşak görünüm için animasyon */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------- */
+/* Açılan menülerin yazı boyutları ve renk ayarı */
+
+#header .dropdown-item {
+  font-size: 15px;
+}
+
+#header .dropdown-item:active {
+  background-color: transparent;
+  color: inherit;
+}
+
+#header .dropdown-item:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+#header .disabled {
+  font-size: 12px;
+}
+
+/* --------------------------- */
+/* Açılan pencerelerin standart boyutları */
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 0;
+  height: 200px;
+  width: 400px;
+  /* top: 42px; */
+}
+
+/* --------------------------- */
+/* Açılan pencerelerin opsiyonel boyutları */
+
+#store-menu { 
+  height: 480px;
+}
+
+#mac-menu {
+  height: 700px;
+}
+
+#ipad-menu {
+  height: 650px;
+}
+
+#iphone-menu {
+  height: 580px;
+}
+
+#watch-menu {
+  height: 520px;
+}
+
+#airpods-menu {
+  height: 400px;
+}
+
+#tvveev-menu {
+  height: 630px;
+}
+
+#eglence-menu {
+  height: 320px;
+}
+
+#aksesuarlar-menu {
+  height: 410px;
+}
+
+#destek-menu {
+  height: 550px;
+}
+
+#search-menu {
+  height: 300px;
+  width: 800px;
+  /* top: 42px; */
+}
+
+#bag-menu {
+  height: 300px;
+  width: 600px;
+  /* top: 42px; */
+}
+
+/* --------------------------- */
+/* Search İçerik */
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 22px;
+  width: 600px;
+}
+
+.search-box i {
+  margin: 0 0 0 15px;
+}
+
+/* --------------------------- */
+/* Bag İçerik */
+
+ul#bag-menu h4 {
+  font-size: 22px;
+  margin: 0 0 0 15px;
+}
+ul#bag-menu p {
+  font-size: 14px;
+  margin: 0 0 0 15px;
+}
+
+ul#bag-menu a.otrmac-link {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* --------------------------- */
+
+
+/* .dropdown-menu li{
+  float: left;
+} */
+
+
+
+/* ---------------------------------------------- /*
+ * Header 2
+/* ---------------------------------------------- */
+
+/* iPhone, Mac gibi modellerin küçük simgelerinin bulunduğu bölüm */
+#header-2 {
+  background-color: #f3f3f3;
+}
+
+#header-2 .header-2-row {
+  height: 130px;
+}
+
+
+/* Her sayfanın kendisine özgü */
+
+#header-2-store {
+  background-color: #f3f3f3;
+  height: 400px;
+}
+
+#header-2-store .header-2-row-store {
+  height: 180px;
+}
+
+#header-2-store .header-2-row-store-2 {
+  height: 220px;
+}
+
+#header-2-store .header-2-row-store-2 .col img {
+  height: 75px;
+}
+
+#header-2-store .header-2-row-store-2 .col p {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+#header-2-store .header-2-row-store-2 .col a {
+  color: #000;
+}
+#header-2-store .header-2-row-store-2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------- */
+
+#header-2-mac .header-2-row-mac-2 .col a {
+  color: #000;
+}
+#header-2-mac .header-2-row-mac-2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------- */
+
+#header-2-ipad .header-2-row-ipad-2 .col a {
+  color: #000;
+}
+#header-2-ipad .header-2-row-ipad-2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------- */
+
+#header-2-iphone .header-2-row-iphone-2 .col a {
+  color: #000;
+}
+#header-2-iphone .header-2-row-iphone-2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------- */
+
+#header-2-watch .header-2-row-watch-2 .col a {
+  color: #000;
+}
+#header-2-watch .header-2-row-watch-2 .col a:hover {
+  text-decoration: underline;
+}
+#header-2-watch .header-2-row-watch-2 .col {
+  text-align: center;
+}
+
+
+/* ---------------------------------------------- /*
+ * Slider
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- /*
+ * content
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+
+#footer {
+  background-color: #f3f3f3;
+  height: 580px;
+  font-size: 14px;
+}
+
+#footer .footer-row {
+  height: 400px;
+}
+
+/* footer daki apple logosunun boyutu ve rengi */
+#footer i {
+  font-size: 17px;
+  color: #363636;
+}
+#footer i:hover {
+  color: #000000;
+}
+
+#footer a{
+  color: #363636;
+}
+#footer a:hover{
+  text-decoration: underline;
+  color: #363636;
+}
+
+#footer .footer-aciklama-yazisi-linkler a {
+  text-decoration: underline;
+  color: blue;
+}
+
+#footer .footer-aciklama-yazisi-linkler p {
+  font-size: 14px;
+}
+
+#footer .footer-aciklama-yazisi-telifhakki {
+  font-size: 14px;
+}
+
+#footer .ftr-tlf {
+  font-size: 13px;
+  text-align: center;
+}
+
+#footer hr {
+  margin: 0;
+}
+
+
+/* ---------------------------------------------- /*
+ * Footer 2 / Her sayfanın kendisine özgü
+/* ---------------------------------------------- */
+
+#footer-2-index {
+  background-color: #f3f3f3;
+  font-size: 13px;
+}
+
+#footer-2-index .footer-2-index-row {
+  height: 80px;
+}
+
+/* ---------------------------------------------- */
+#footer-2-store {
+  background-color: #f3f3f3;
+  font-size: 13px;
+}
+#footer-2-store .footer-2-store-row {
+  height: 300px;
+}
+
+/* ---------------------------------------------- */
+
+#footer-2-mac {
+  background-color: #f3f3f3;
+  font-size: 13px;
+}
+#footer-2-mac .footer-2-mac-row {
+  height: 600px;
+}
+
+/* ---------------------------------------------- */
+
+#footer-2-ipad {
+  background-color: #f3f3f3;
+  font-size: 13px;
+}
+#footer-2-ipad .footer-2-ipad-row {
+  height: 300px;
+}
+
+/* ---------------------------------------------- */
+
+#footer-2-iphone {
+  background-color: #f3f3f3;
+  font-size: 13px;
+}
+#footer-2-iphone .footer-2-iphone-row {
+  height: 750px;
+}
+
+/* ---------------------------------------------- */
+
+#footer-2-watch {
+  background-color: #f3f3f3;
+  font-size: 13px;
+}
+#footer-2-watch .footer-2-watch-row {
+  height: 750px;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * index.html
+/* ---------------------------------------------- */
+
+#content1 {
+  background-color: #f3f3f3;
+  height: 700px;
+}
+
+#content1 img {
+  height: 400px;
+}
+
+#content1 {
+  text-align: center;
+}
+
+#content1 h1 {
+  margin: 100px 0 0 0;
+  font-size: 60px;
+}
+#content1 p {
+  font-size: 30px;
+}
+
+
+
+/* ---------------------------------------------- */
+
+#content2 {
+  background-color: #f3f3f3;
+}
+
+#content2 img {
+  height: 700px;
+  width: 100%;
+}
+
+#content2 .content2-row {
+  background-image: url('../img/index/index_2.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+}
+
+#content2 .content2-row div .text {
+  margin: 450px 0 0 0;
+  text-align: center;
+}
+
+#content2 .content2-row div .text h1 {
+  font-size: 60px;
+}
+
+#content2 .content2-row div .text p {
+  font-size: 30px;
+}
+
+
+/* ---------------------------------------------- */
+
+#content3 {
+  background-color: #f3f3f3;
+}
+
+#content3 img {
+  height: 700px;
+  width: 100%;
+}
+
+#content3 .content3-row {
+  background-image: url('../img/index/index_3.png');
+  background-size: cover;
+  background-position: center;
+  width: 102%;
+  height: 700px;
+}
+
+#content3 .content3-row div .text {
+  margin: 45px 0 0 0;
+  text-align: center;
+}
+
+#content3 .content3-row div .text h1 {
+  font-size: 50px;
+}
+
+#content3 .content3-row div .text p {
+  font-size: 30px;
+}
+
+
+
+/* ---------------------------------------------- */
+
+/* #content4 {
+  background-color: #f3f3f3;
+} */
+
+#content4 .content4-row {
+  height: 550px;
+}
+
+
+#content4 .content4-row-1 {
+  background-image: url('../img/index/index_4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#content4 .content4-row-2 {
+  background-image: url('../img/index/index_5.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#content4 .content4-row div .text {
+  margin: 45px 0 0 0;
+  text-align: center;
+}
+
+#content4 .content4-row div .text h1 {
+  font-size: 40px;
+}
+
+#content4 .content4-row div .text p {
+  font-size: 20px;
+}
+
+
+/* ---------------------------------------------- */
+
+/* #content5 {
+  background-color: #f3f3f3;
+} */
+
+#content5 .content5-row {
+  height: 550px;
+}
+
+
+#content5 .content5-row-1 {
+  background-image: url('../img/index/index_6.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#content5 .content5-row-2 {
+  background-image: url('../img/index/index_7.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#content5 .content5-row div .text {
+  margin: 35px 0 0 0;
+  text-align: center;
+}
+
+#content5 .content5-row div .text-2 {
+  margin: 350px 0 0 0;
+  color: #fff;
+}
+
+#content5 .content5-row div .text h1 {
+  font-size: 40px;
+}
+
+#content5 .content5-row div .text p {
+  font-size: 20px;
+}
+
+
+/* ---------------------------------------------- */
+
+/* #content6 {
+  background-color: #f3f3f3;
+} */
+
+#content6 .content6-row {
+  height: 550px;
+}
+
+
+#content6 .content6-row-1 {
+  background-image: url('../img/index/index_8.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#content6 .content6-row-2 {
+  background-image: url('../img/index/index_9.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#content6 .content6-row div .text {
+  margin: 35px 0 0 0;
+  text-align: center;
+}
+
+#content6 .content6-row div .text-2 {
+  margin: 370px 0 0 0;
+}
+
+#content6 .content6-row div .text h1 {
+  font-size: 40px;
+}
+
+#content6 .content6-row div .text p {
+  font-size: 20px;
+}
+
+/* ---------------------------------------------- /*
+ * store.html
+/* ---------------------------------------------- */
+
+#content1-store {
+  background-color: #f3f3f3;
+}
+
+#content1-store .content1-row-store1 {
+  height: 50px;
+}
+
+#content1-store .content1-row-store2 {
+  height: 550px;
+}
+
+#content1-store .content1-row-store1 .h3-2 {
+  color: #6E6E73;
+}
+
+/* ---------------------------------------------- */
+
+#content2-store {
+  background-color: #f3f3f3;
+}
+
+#content2-store .content2-row-store1 {
+  height: 50px;
+}
+
+#content2-store .content2-row-store2 {
+  height: 550px;
+}
+
+#content2-store .content2-row-store1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content3-store {
+  background-color: #f3f3f3;
+}
+
+#content3-store .content3-row-store1 {
+  height: 50px;
+}
+
+#content3-store .content3-row-store2 {
+  height: 550px;
+}
+
+#content3-store .content3-row-store1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content4-store {
+  background-color: #f3f3f3;
+}
+
+#content4-store .content4-row-store1 {
+  height: 50px;
+}
+
+#content4-store .content4-row-store2 {
+  height: 300px;
+}
+
+#content4-store .content4-row-store1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content5-store {
+  background-color: #f3f3f3;
+}
+
+#content5-store .content5-row-store1 {
+  height: 50px;
+}
+
+#content5-store .content5-row-store2 {
+  height: 600px;
+}
+
+#content5-store .content5-row-store1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+#hizlibaglantilar {
+  background-color: #f3f3f3;
+}
+
+#hizlibaglantilar .hizlibaglantilar-row {
+  height: 50px;
+}
+
+#hizlibaglantilar .hizlibaglantilar-row-2 {
+  height: 80px;
+}
+
+
+/* ---------------------------------------------- /*
+ * mac.html
+/* ---------------------------------------------- */
+#header-2-mac {
+  background-color: #f3f3f3;
+  height: 130px;
+}
+
+#header-2-mac .header-2-row-mac-2 {
+  height: 130px;
+}
+
+#header-2-mac .header-2-row-mac-2 img {
+  height: 45px;
+}
+
+#header-2-mac .header-2-row-mac-2 p {
+  font-size: 13px;
+
+}
+
+/* ---------------------------------------------- */
+#content1-mac {
+  margin: 100px 0 0 0;
+}
+
+#content1-mac .content1-mac-row {
+  height: 100px;
+}
+
+#content1-mac .content1-mac-row-2 {
+  height: 700px;
+}
+
+#content1-mac .content1-mac-row h4 {
+  text-align: end;
+}
+
+#content1-mac .content1-mac-row-2 video {
+  border-radius: 35px;
+}
+
+.video-container {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Video orantılı şekilde divi tamamen doldurur */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* ---------------------------------------------- */
+
+#content2-mac {
+  margin: 100px 0 0 0;
+}
+
+#content2-mac .content2-row-mac1 {
+  height: 50px;
+}
+
+#content2-mac .content2-row-mac2 {
+  height: 850px;
+}
+
+#content2-mac .content2-row-mac2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content2-mac .content2-row-mac2 .card p {
+  font-size: 30px;
+}
+
+#content2-ipad .content2-row-mac1 .h3-2 {
+  color: #6E6E73;
+}
+
+/* ---------------------------------------------- */
+
+#content3-mac {
+  margin: 100px 0 0 0;
+}
+
+#content3-mac .content3-row-mac1 {
+  height: 50px;
+}
+
+#content3-mac .content3-row-mac1 a:hover{
+  text-decoration: underline;
+}
+
+#content3-mac .content3-row-mac3 {
+  height: 70px;
+  margin: 70px 0 0 0;
+}
+
+#content3-mac .content3-row-mac2 {
+  height: 1500px;
+  margin: 70px 0 0 0;
+  text-align: center;
+}
+
+#content3-mac .content3-row-mac2 .acıklama {
+  font-size: 12px;
+}
+
+#content3-mac .content3-row-mac2 a:hover {
+  text-decoration: underline;
+}
+
+#content3-mac .content3-row-mac2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content3-mac .content3-row-mac2 .card p {
+  font-size: 30px;
+}
+
+#content3-store .content3-row-mac1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content4-mac {
+  margin: 100px 0 150px 0;
+}
+
+#content4-mac .content4-row-mac1 {
+  height: 50px;
+  margin: 0 0 80px 0;
+}
+
+#content4-mac .content4-row-mac2 {
+  height: 500px;
+}
+
+#content4-mac .content4-row-mac2 .col {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#content4-mac .content4-row-mac2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* #content4-mac .content4-row-mac2 img {
+  border-radius: 20px;
+} */
+
+#content4-store .content4-row-mac1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- /*
+ * ipad.html
+/* ---------------------------------------------- */
+
+#header-2-ipad {
+  background-color: #f3f3f3;
+  height: 130px;
+}
+
+#header-2-ipad .header-2-row-ipad-2 {
+  height: 130px;
+}
+
+#header-2-ipad .header-2-row-ipad-2 img {
+  height: 45px;
+}
+
+#header-2-ipad .header-2-row-ipad-2 p {
+  font-size: 13px;
+
+}
+
+/* ---------------------------------------------- */
+#content1-ipad {
+  margin: 100px 0 0 0;
+}
+
+#content1-ipad .content1-ipad-row {
+  height: 100px;
+}
+
+#content1-ipad .content1-ipad-row-2 {
+  height: 700px;
+}
+
+#content1-ipad .content1-ipad-row h4 {
+  text-align: start;
+}
+
+#content1-ipad .content1-ipad-row-2 video {
+  border-radius: 35px;
+}
+
+.video-container {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Video orantılı şekilde divi tamamen doldurur */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* ---------------------------------------------- */
+
+#content2-ipad {
+  margin: 100px 0 0 0;
+}
+
+#content2-ipad .content2-row-ipad1 {
+  height: 50px;
+}
+
+#content2-ipad .content2-row-ipad2 {
+  height: 850px;
+}
+
+#content2-ipad .content2-row-ipad2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content2-ipad .content2-row-ipad2 .card p {
+  font-size: 30px;
+}
+
+#content2-ipad .content2-row-ipad1 .h3-2 {
+  color: #6E6E73;
+}
+
+/* ---------------------------------------------- */
+
+#content3-ipad {
+  margin: 100px 0 0 0;
+}
+
+#content3-ipad .content3-row-ipad1 {
+  height: 50px;
+}
+
+#content3-ipad .content3-row-ipad1 a:hover{
+  text-decoration: underline;
+}
+
+#content3-ipad .content3-row-ipad3 {
+  height: 70px;
+  margin: 70px 0 0 0;
+}
+
+#content3-ipad .content3-row-ipad2 {
+  height: 1750px;
+  margin: 70px 0 0 0;
+  text-align: center;
+}
+
+#content3-ipad .content3-row-ipad2 .acıklama {
+  font-size: 12px;
+}
+
+#content3-ipad .content3-row-ipad2 a:hover {
+  text-decoration: underline;
+}
+
+#content3-ipad .content3-row-ipad2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content3-ipad .content3-row-ipad2 .card p {
+  font-size: 30px;
+}
+
+#content3-ipad .content3-row-ipad1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content4-ipad {
+  margin: 100px 0 150px 0;
+}
+
+#content4-ipad .content4-row-ipad1 {
+  height: 50px;
+  margin: 0 0 80px 0;
+}
+
+#content4-ipad .content4-row-ipad2 {
+  height: 500px;
+}
+
+#content4-ipad .content4-row-ipad2 .col {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#content4-ipad .content4-row-ipad2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* #content4-ipad .content4-row-ipad2 img {
+  border-radius: 20px;
+} */
+
+#content4-ipad .content4-row-ipad1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- /*
+ * iphone.html
+/* ---------------------------------------------- */
+
+#header-2-iphone {
+  background-color: #f3f3f3;
+  height: 130px;
+}
+
+#header-2-iphone .header-2-row-iphone-2 {
+  height: 130px;
+}
+
+#header-2-iphone .header-2-row-iphone-2 img {
+  height: 45px;
+}
+
+#header-2-iphone .header-2-row-iphone-2 p {
+  font-size: 13px;
+
+}
+
+/* ---------------------------------------------- */
+#content1-iphone {
+  margin: 100px 0 0 0;
+}
+
+#content1-iphone .content1-iphone-row {
+  height: 100px;
+}
+
+#content1-iphone .content1-iphone-row-2 {
+  height: 700px;
+}
+
+#content1-iphone .content1-iphone-row h4 {
+  text-align: end;
+}
+
+#content1-iphone .content1-iphone-row-2 video {
+  border-radius: 35px;
+}
+
+.video-container {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Video orantılı şekilde divi tamamen doldurur */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* ---------------------------------------------- */
+
+#content2-iphone {
+  margin: 100px 0 0 0;
+}
+
+#content2-iphone .content2-row-iphone1 {
+  height: 50px;
+}
+
+#content2-iphone .content2-row-iphone2 {
+  height: 850px;
+}
+
+#content2-iphone .content2-row-iphone2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content2-iphone .content2-row-iphone2 .card p {
+  font-size: 30px;
+}
+
+#content2-iphone .content2-row-iphone1 .h3-2 {
+  color: #6E6E73;
+}
+
+/* ---------------------------------------------- */
+
+#content3-iphone {
+  margin: 100px 0 0 0;
+}
+
+#content3-iphone .content3-row-iphone1 {
+  height: 50px;
+}
+
+#content3-iphone .content3-row-iphone1 a:hover{
+  text-decoration: underline;
+}
+
+#content3-iphone .content3-row-iphone3 {
+  height: 70px;
+  margin: 70px 0 0 0;
+}
+
+#content3-iphone .content3-row-iphone2 {
+  height: 1450px;
+  margin: 70px 0 0 0;
+  text-align: center;
+}
+
+#content3-iphone .content3-row-iphone2 .acıklama {
+  font-size: 12px;
+}
+
+#content3-iphone .content3-row-iphone2 a:hover {
+  text-decoration: underline;
+}
+
+#content3-iphone .content3-row-iphone2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content3-iphone .content3-row-iphone2 .card p {
+  font-size: 30px;
+}
+
+#content3-iphone .content3-row-iphone1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content4-iphone {
+  margin: 100px 0 150px 0;
+}
+
+#content4-iphone .content4-row-iphone1 {
+  height: 50px;
+  margin: 0 0 80px 0;
+}
+
+#content4-iphone .content4-row-iphone2 {
+  height: 500px;
+}
+
+#content4-iphone .content4-row-iphone2 .col {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#content4-iphone .content4-row-iphone2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* #content4-iphone .content4-row-iphone2 img {
+  border-radius: 20px;
+} */
+
+#content4-iphone .content4-row-iphone1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content5-iphone {
+  height: 600px;
+}
+
+#content5-iphone .content5-row-iphone2 {
+  height: 500px;
+  background-image: url('../img/iphone/content5/1.jpg');
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+#content5-iphone .content5-row-iphone2 h3 {
+  margin: 170px 0 25px 0;
+}
+
+#content5-iphone .btn-light {
+  width: 130px;
+  background-color: #eee;
+}
+
+#content5-iphone .btn-light:hover {
+  background-color: #f3f3f3
+}
+
+#content5-iphone .content5-row-iphone1 {
+  height: 100px;
+}
+
+
+/* ---------------------------------------------- /*
+ * watch.html
+/* ---------------------------------------------- */
+
+#header-2-watch {
+  background-color: #f3f3f3;
+  height: 150px;
+}
+
+#header-2-watch .header-2-row-watch-2 {
+  height: 150px;
+}
+
+#header-2-watch .header-2-row-watch-2 img {
+  height: 45px;
+}
+
+#header-2-watch .header-2-row-watch-2 p {
+  font-size: 13px;
+
+}
+
+/* ---------------------------------------------- */
+#content1-watch {
+  margin: 100px 0 0 0;
+}
+
+#content1-watch .content1-watch-row {
+  height: 100px;
+}
+
+#content1-watch .content1-watch-row-2 {
+  height: 700px;
+}
+
+#content1-watch .content1-watch-row h4 {
+  text-align: end;
+}
+
+#content1-watch .content1-watch-row-2 video {
+  border-radius: 35px;
+}
+
+.video-container {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Video orantılı şekilde divi tamamen doldurur */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* ---------------------------------------------- */
+
+#content2-watch {
+  margin: 100px 0 0 0;
+}
+
+#content2-watch .content2-row-watch1 {
+  height: 50px;
+}
+
+#content2-watch .content2-row-watch2 {
+  height: 850px;
+}
+
+#content2-watch .content2-row-watch2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content2-watch .content2-row-watch2 .card p {
+  font-size: 30px;
+}
+
+#content2-watch .content2-row-watch1 .h3-2 {
+  color: #6E6E73;
+}
+
+/* ---------------------------------------------- */
+
+#content3-watch {
+  margin: 100px 0 0 0;
+}
+
+#content3-watch .content3-row-watch1 {
+  height: 50px;
+}
+
+#content3-watch .content3-row-watch1 a:hover{
+  text-decoration: underline;
+}
+
+#content3-watch .content3-row-watch3 {
+  height: 70px;
+  margin: 70px 0 0 0;
+}
+
+#content3-watch .content3-row-watch2 {
+  height: 1500px;
+  margin: 70px 0 0 0;
+  text-align: center;
+}
+
+#content3-watch .content3-row-watch2 .acıklama {
+  font-size: 12px;
+}
+
+#content3-watch .content3-row-watch2 a:hover {
+  text-decoration: underline;
+}
+
+#content3-watch .content3-row-watch2 .card h4 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#content3-watch .content3-row-watch2 .card p {
+  font-size: 30px;
+}
+
+#content3-watch .content3-row-watch1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content4-watch {
+  margin: 100px 0 150px 0;
+}
+
+#content4-watch .content4-row-watch1 {
+  height: 100px;
+  margin: 0 0 80px 0;
+}
+
+#content4-watch .content4-row-watch2 {
+  height: 500px;
+}
+
+#content4-watch .content4-row-watch2 .col {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#content4-watch .content4-row-watch2 .col a:hover {
+  text-decoration: underline;
+}
+
+/* #content4-watch .content4-row-watch2 img {
+  border-radius: 20px;
+} */
+
+#content4-watch .content4-row-watch1 .h3-2 {
+  color: #6E6E73;
+}
+
+
+/* ---------------------------------------------- */
+
+#content5-watch {
+  height: 600px;
+  margin: 140px 0 0 0;
+}
+
+#content5-watch .content5-row-watch2 {
+  height: 500px;
+  background-image: url('../img/applewatch/content5/1.png');
+  border-radius: 25px;
+  text-align: center;
+}
+
+#content5-watch .content5-row-watch2 h3 {
+  margin: 120px 0 25px 0;
+}
+
+#content5-watch .content5-row-watch1 {
+  height: 100px;
+}
+
+#content5-watch a:hover {
+  text-decoration: underline;
+}
+
+#content5-watch .btn {
+  width: 120px;
+}
+
+
+
+/* ---------------------------------------------- /*
+ * efsanecuma.html
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- /*
+ * İletişim.html
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- /*
+ * giriskayit.html
+/* ---------------------------------------------- */
